@@ -1,13 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma Bibliotheque</title>
     <link href="css/style.css" rel="stylesheet"/>
-    <script async src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
+    <header>
+        <h1>Ma Bibliotheque</h1>
+        <p>
+            Ici vous retrouverez les différents livres que j'ai lu
+            ou que j'ai l'intention de lire
+        </p>
+    </header>
+
+    <main>
+        <nav>
+            <h3>Zone de recherche</h3>
+            <div>
+                <input type="text" id="livre-chercher"/>
+                <button id="rechercher-btn">Recherche</button>
+            </div>
+            <br>
+            <div>
+                <button id="tous">Tous</button>
+                <button id="a-lire">A lire</button>
+                <button id="en-cours">En cours</button>
+                <button id="termine">Terminé</button>
+            </div>
+        </nav>
+        <hr/>
+        <section>
+            <h3>Formulaire - Nouveau Livre</h3>
+            <form>
+                <p>
+                    <label for="titre">Titre (obligatoire)&nbsp;:</label>
+                    <input type="text" name="titre" id="titre" required />
+                </p>
+                <p>
+                    <label for="auteur">Auteur (obligatoire)&nbsp;:</label>
+                    <input type="text" name="auteur" id="auteur" required />
+                </p>
+                <p>
+                    <label for="annee">Année (obligatoire)&nbsp;:</label>
+                    <input type="number" name="annee" id="annee" required />
+                </p>
+                <p>
+                    <label for="statut">Statut (obligatoire)&nbsp;:</label>
+                    <select name="statut" id="statut" required>
+                        <option value="">--Veuillez choisir un statut--</option>
+                        <option value="a-lire">A lire</option>
+                        <option value="en-cours">En cours</option>
+                        <option value="termine">Termine</option>
+                    </select>
+                </p>
+                <p>
+                    <button id="ajouter">Ajouter un livre</button>
+                </p>
+            </form>
+        </section>
+        <hr/>
+
+        <section>
+            <h3>Liste de livres</h3>
+            <ul>
+                <li>livre 1</li>
+                <li>livre 2</li>
+                <li>livre 3</li>
+            </ul>
+        </section>
+        <hr/>
+        <section>
+            <h3>Statistiques</h3>
+            <ul>
+                <li>Nombre total : </li>
+                <li>A lire : </li>
+                <li>En cours : </li>
+                <li>Terminés : </li>
+            </ul>
+        </section>
+        
+    </main>
     
 </body>
 </html>
