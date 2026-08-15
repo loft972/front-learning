@@ -72,15 +72,16 @@ h3, p{
     list-style-type: none;
     gap: 10px;
     justify-content: space-around;
-    align-content: space-around;
 }
 
 .livre {
     display: flex;
     flex-flow: column;
-    width: 100px;
-    align-items: stretch;
+    min-width: 100px;
     border: brown solid 1px;
-    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 10px 5px 5px;
+    background-color: tan;
+    padding: 20px;
 }
 
