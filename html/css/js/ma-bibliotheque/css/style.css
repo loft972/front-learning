@@ -1,0 +1,47 @@
+html{
+    position: relative;
+    background-color: whitesmoke;
+}
+
+body{
+    border: thick double rgb(5, 5, 5);
+    border-radius: 30px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+main{   
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin: 0 auto;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+hr{
+    border: none;        
+    height: 2px;          
+    background-color: #333;
+    width: 80%;            
+    margin: 20px auto; 
+}
+
+ul {
+  display: table;
+  margin: 0 auto;
+  text-align: left;
+}
+
+h3{
+    color: cornflowerblue;
+}
+
+h3, p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
